@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int& update(int& num){
+    num+=5;
+    return num;
+}
+int main(){
+    int x = 10;
+    int& result= update(x);
+    cout<<"x="<<x<<endl;
+    cout<<"result="<<result<<endl;
+    result+= 5;
+    cout<<"x after result+=5;"<<x<<endl;
+    return 0;
+    
+}
